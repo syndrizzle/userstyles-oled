@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup Deno
         uses: denoland/setup-deno@v2
@@ -34,5 +34,5 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release view all-userstyles-export || gh release create all-userstyles-export --title "All Userstyles Export" --notes "Latest generated Stylus import file."
-          gh release upload all-userstyles-export dist/import.json --clobber
+          gh release view all-userstyles || gh release create all-userstyles --title "All Userstyles" --notes "Latest generated Stylus import file."
+          gh release upload all-userstyles dist/import.json --clobber

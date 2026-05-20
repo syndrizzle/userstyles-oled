@@ -1,7 +1,7 @@
 <h3 align="center">
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-  Catppuccin Userstyles
+  OLEDppuccin
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
@@ -13,15 +13,12 @@
 </p>
 
 <p align="center">
-A curated collection of soothing pastel themes for your favorite websites and web applications.
+  Catppuccin userstyles but for OLED displays
 </p>
 
-<p align="center">
-<img src="docs/src/assets/preview.webp"/>
-</p>
 
 <p align="center">
-Visit <a href="https://userstyles.catppuccin.com">userstyles.catppuccin.com</a> to get started.
+Install via <a href="https://github.com/syndrizzle/userstyles-oled/releases/download/all-userstyles/import.json">Releases</a> to get started.
 </p>
 
 &nbsp;
