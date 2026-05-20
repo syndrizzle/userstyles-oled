@@ -1,0 +1,32 @@
+name: Update from upstream
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.repository == 'syndrizzle/userstyles-oled'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync styles and library from upstream
+        run: python scripts/sync-upstream.py
+
+      - name: Commit upstream sync
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add styles lib
+          if git diff --cached --quiet; then
+            echo "No upstream changes."
+          else
+            git commit -m "chore: sync upstream userstyles"
+            git push
+          fi

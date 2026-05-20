@@ -1,5 +1,0 @@
-{
-  "deno.enable": true,
-  "editor.defaultFormatter": "denoland.vscode-deno",
-  "markdown.extension.toc.updateOnSave": false
-}
